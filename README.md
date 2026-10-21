@@ -30,6 +30,8 @@ These figures describe the project's indexing measurement. They are not a claim 
 
 [Source code fork](https://github.com/emoryv/NilVec) · [Original repository](https://github.com/C0ll1nDr4k3/NilVec)
 
+The public source includes the [Rust HNSW implementation](https://github.com/C0ll1nDr4k3/NilVec/blob/master/src/hnsw.rs), [Python bindings](https://github.com/C0ll1nDr4k3/NilVec/blob/master/src/lib.rs), and [benchmark script](https://github.com/C0ll1nDr4k3/NilVec/blob/master/main.py). The fork preserves upstream authorship and commit history. My contribution described above was collaborative algorithm design; linking the library does not attribute all implementation files to me or establish that the current source reproduces the reported 400-to-8-second measurement.
+
 ## Repository scope
 
 This repository documents my contribution to the indexing optimization. It is a portfolio case study rather than a copy of the original library, implementation, or benchmark dataset.
