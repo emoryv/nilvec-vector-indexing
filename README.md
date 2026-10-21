@@ -1,45 +1,39 @@
-# NilVec — Vector Search Indexing Optimization
+# NilVec Vector Indexing — Case Study
 
 **Research Project · Fall 2024**
 
-I co-designed an optimistic-concurrency approach for vector-search indexing in a **two-person team, with guidance from an industry mentor**. On a one-million-vector dataset, indexing runtime fell from approximately **400 seconds to 8 seconds**, an approximately **50× speedup**.
-
-## Engineering problem
-
-Vector-search systems need to build an index before they can efficiently retrieve nearby vectors. This project focused on reducing index-construction time through a different concurrency approach.
+Co-designed an optimistic-concurrency approach to reduce vector-index construction time in a two-person team, with guidance from an industry mentor.
 
 ## My contribution
 
-I co-designed the optimistic-concurrency approach with my teammate. The performance improvement was a shared project result; this write-up does not attribute the entire NilVec library to me.
+Worked with my teammate on the concurrency design. The optimization and its measured improvement were shared project outcomes.
 
-## Reported result
+## Reported indexing measurement
 
 | Measure | Result |
 | --- | --- |
-| Dataset size | 1,000,000 vectors |
-| Earlier indexing runtime | Approximately 400 seconds |
-| Improved indexing runtime | Approximately 8 seconds |
-| Speedup | Approximately 50× (400 ÷ 8) |
-| Timed-stage runtime reduction | Approximately 98% |
+| Dataset | 1,000,000 vectors |
+| Earlier runtime | Approximately 400 seconds |
+| Improved runtime | Approximately 8 seconds |
+| Speedup | Approximately 50× |
+| Runtime reduction | Approximately 98% |
 
-These figures describe the project's indexing measurement. They are not a claim of 50× faster search queries, a universal speedup across datasets, or an independently reproduced benchmark. Hardware, dataset distribution, and the benchmark harness are not included in this repository.
+These timings describe index construction, not search-query latency. The original hardware details, dataset specification, baseline implementation, and benchmark harness are not included here, so this repository does not independently reproduce the reported result.
 
-## Related project
+## Public source
 
-[NilVec on PyPI](https://pypi.org/project/nilvec/)
+[Upstream NilVec library](https://github.com/C0ll1nDr4k3/NilVec) · [Source fork](https://github.com/emoryv/NilVec) · [PyPI package](https://pypi.org/project/nilvec/)
 
-[Source code fork](https://github.com/emoryv/NilVec) · [Original repository](https://github.com/C0ll1nDr4k3/NilVec)
+- [Rust HNSW implementation](https://github.com/C0ll1nDr4k3/NilVec/blob/master/src/hnsw.rs)
+- [Python bindings](https://github.com/C0ll1nDr4k3/NilVec/blob/master/src/lib.rs)
+- [Benchmark script](https://github.com/C0ll1nDr4k3/NilVec/blob/master/main.py)
 
-The public source includes the [Rust HNSW implementation](https://github.com/C0ll1nDr4k3/NilVec/blob/master/src/hnsw.rs), [Python bindings](https://github.com/C0ll1nDr4k3/NilVec/blob/master/src/lib.rs), and [benchmark script](https://github.com/C0ll1nDr4k3/NilVec/blob/master/main.py). The fork preserves upstream authorship and commit history. My contribution described above was collaborative algorithm design; linking the library does not attribute all implementation files to me or establish that the current source reproduces the reported 400-to-8-second measurement.
+**Source and attribution:** My contribution was collaborative algorithm design. The linked library preserves upstream authorship and commit history; its current implementation is not established here as the version behind the reported timing measurement.
 
-## Runnable companion example
+## Supplemental example
 
-[Run the vector-search demo](examples/README.md): a standard-library exact-search baseline, plus an optional NilVec adapter measuring recall@k and query timing. Includes setup instructions and correctness checks. This new example was prepared with AI assistance for the portfolio; it is separate from the historical research and benchmark.
+[Vector-search example and setup](examples/README.md) provides an exact-search reference and an optional NilVec adapter. It was added with AI assistance during portfolio preparation in October 2026, separately from the original research. The default mode and three correctness checks passed; the optional NilVec backend remains untested in this environment.
 
-## Repository scope
-
-This repository documents my contribution to the indexing optimization. It is a portfolio case study rather than a copy of the original library, implementation, or benchmark dataset.
-
-**Focus:** vector indexing, concurrency, systems performance, benchmarking
+**Focus:** vector indexing, concurrency, systems performance
 
 [Back to my profile](https://github.com/emoryv)
