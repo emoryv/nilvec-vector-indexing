@@ -28,6 +28,8 @@ These figures describe the project's indexing measurement. They are not a claim 
 
 [NilVec on PyPI](https://pypi.org/project/nilvec/)
 
+[Related GitHub profile: C0ll1nDr4k3](https://github.com/C0ll1nDr4k3)
+
 ## Repository scope
 
 This repository documents my contribution to the indexing optimization. It is a portfolio case study rather than a copy of the original library, implementation, or benchmark dataset.
