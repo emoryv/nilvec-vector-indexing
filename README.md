@@ -32,6 +32,10 @@ These figures describe the project's indexing measurement. They are not a claim 
 
 The public source includes the [Rust HNSW implementation](https://github.com/C0ll1nDr4k3/NilVec/blob/master/src/hnsw.rs), [Python bindings](https://github.com/C0ll1nDr4k3/NilVec/blob/master/src/lib.rs), and [benchmark script](https://github.com/C0ll1nDr4k3/NilVec/blob/master/main.py). The fork preserves upstream authorship and commit history. My contribution described above was collaborative algorithm design; linking the library does not attribute all implementation files to me or establish that the current source reproduces the reported 400-to-8-second measurement.
 
+## Runnable companion example
+
+[Run the vector-search demo](examples/README.md): a standard-library exact-search baseline, plus an optional NilVec adapter measuring recall@k and query timing. Includes setup instructions and correctness checks. This new example was prepared with AI assistance for the portfolio; it is separate from the historical research and benchmark.
+
 ## Repository scope
 
 This repository documents my contribution to the indexing optimization. It is a portfolio case study rather than a copy of the original library, implementation, or benchmark dataset.
