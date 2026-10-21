@@ -28,7 +28,7 @@ These figures describe the project's indexing measurement. They are not a claim 
 
 [NilVec on PyPI](https://pypi.org/project/nilvec/)
 
-[Related GitHub profile: C0ll1nDr4k3](https://github.com/C0ll1nDr4k3)
+[Source code fork](https://github.com/emoryv/NilVec) · [Original repository](https://github.com/C0ll1nDr4k3/NilVec)
 
 ## Repository scope
 
