@@ -2,13 +2,9 @@
 
 **Research Project · Fall 2024**
 
-Co-designed an optimistic-concurrency approach to reduce vector-index construction time in a two-person team, with guidance from an industry mentor.
+I worked with a teammate and an industry mentor on a way to build vector-search indexes faster. My contribution was to the design of an optimistic concurrency approach. The optimization and measured improvement were shared project results.
 
-## My contribution
-
-Worked with my teammate on the concurrency design. The optimization and its measured improvement were shared project outcomes.
-
-## Reported indexing measurement
+## Reported project results
 
 | Measure | Result |
 | --- | --- |
@@ -18,7 +14,7 @@ Worked with my teammate on the concurrency design. The optimization and its meas
 | Speedup | Approximately 50× |
 | Runtime reduction | Approximately 98% |
 
-These timings describe index construction, not search-query latency. The original hardware details, dataset specification, baseline implementation, and benchmark harness are not included here, so this repository does not independently reproduce the reported result.
+The timings measure how long it took to build the index. The original hardware details, dataset, baseline code, and benchmark setup are not included, so the result has not been reproduced in this repository.
 
 ## Public source
 
@@ -28,7 +24,7 @@ These timings describe index construction, not search-query latency. The origina
 - [Python bindings](https://github.com/C0ll1nDr4k3/NilVec/blob/master/src/lib.rs)
 - [Benchmark script](https://github.com/C0ll1nDr4k3/NilVec/blob/master/main.py)
 
-**Source and attribution:** My contribution was collaborative algorithm design. The linked library preserves upstream authorship and commit history; its current implementation is not established here as the version behind the reported timing measurement.
+**About the code:** The linked library includes work by its original authors. My role was in the concurrency design; the source fork retains the original commit history. The current public code has not been verified as the version used for the timing comparison.
 
 **Focus:** vector indexing, concurrency, systems performance
 
