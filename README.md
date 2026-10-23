@@ -30,10 +30,6 @@ These timings describe index construction, not search-query latency. The origina
 
 **Source and attribution:** My contribution was collaborative algorithm design. The linked library preserves upstream authorship and commit history; its current implementation is not established here as the version behind the reported timing measurement.
 
-## Supplemental example
-
-[Vector-search example and setup](examples/README.md) provides an exact-search reference and an optional NilVec adapter. It was added with AI assistance during portfolio preparation in October 2026, separately from the original research. The default mode and three correctness checks passed; the optional NilVec backend remains untested in this environment.
-
 **Focus:** vector indexing, concurrency, systems performance
 
 [Back to my profile](https://github.com/emoryv)
