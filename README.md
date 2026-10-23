@@ -16,9 +16,11 @@ I worked with a teammate and an industry mentor on a way to build vector-search 
 
 The timings measure how long it took to build the index. The original hardware details, dataset, baseline code, and benchmark setup are not included, so the result has not been reproduced in this repository.
 
-## Public source
+## Source code
 
-[Upstream NilVec library](https://github.com/C0ll1nDr4k3/NilVec) · [Source fork](https://github.com/emoryv/NilVec) · [PyPI package](https://pypi.org/project/nilvec/)
+[View the source-code fork](https://github.com/emoryv/NilVec)
+
+The fork contains the library's source code and original commit history. [Original repository](https://github.com/C0ll1nDr4k3/NilVec) · [PyPI package](https://pypi.org/project/nilvec/)
 
 - [Rust HNSW implementation](https://github.com/C0ll1nDr4k3/NilVec/blob/master/src/hnsw.rs)
 - [Python bindings](https://github.com/C0ll1nDr4k3/NilVec/blob/master/src/lib.rs)
